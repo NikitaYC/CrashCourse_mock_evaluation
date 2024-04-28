@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Employee Management System</h1>
+    <div id="parent1">
+        <div>
+            <label for="Filter_by_Department">Filter by Department</label>
+            <select name="--select Department--" id="">
+                <option value="select_department">--select Department--</option>
+                <option value="hr">hr</option>
+                <option value="finance">finance</option>
+                <option value="marketing">Marketing</option>
+                <option value="enginnering">enginnering</option>
+                <option value="operations">operations</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="Filter_by_gender">Filter by Gender</label>
+            <select name="" id="">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select>
+        </div>
+        <div>
+            <label for="sort_by_salary">Sort by Salary</label>
+            <select name="" id="">
+                <option value="LowToHigh">Low to High</option>
+                <option value="HighToLow">High to Low</option>
+            </select>
+        </div>
+        
+    </div>
+    <table id="table">
+        <thead>
+            <tr>
+                <th>S.no</th>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Department</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+    </table>
+    <tbody id="tbody">
+
+    </tbody>
+
+    <div>
+        <button id="prev">Prev</button>
+        <button id="next">Next</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
